@@ -1,4 +1,12 @@
 import './globals.css'
+import { Poppins } from "@next/font/google"
+import Navbar from './navbar'
+
+const poppins = Poppins({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  variable: "--font-poppins"
+})
 
 export default function RootLayout({ children }) {
   return (
@@ -8,7 +16,11 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+
+      <body className={`${poppins.className}`}>
+        <Navbar></Navbar>
+        {children}
+      </body>
     </html>
   )
 }
