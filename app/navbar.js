@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
     return (
-        <section className='w-full bg-slate-50 shadow-lg'>
+        <section className='w-full bg-slate-50 shadow-lg '>
             <div className='flex justify-around items-center py-2 '>
                 <div className='flex flex-row items-center space-x-6'>
                     <div className='flex items-center space-x-3'>
@@ -15,7 +15,7 @@ export default function Navbar() {
                     <div className='space-x-6 items-end'>
                         <Link href={`/`}>Home</Link>
                         <Link href={`/about`}>About</Link>
-                        <Link href={`/`}>Home</Link>
+                        <Link href={`/`}>Contact</Link>
                     </div>
                 </div>
 
